@@ -1,0 +1,108 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Accounting Service | Taxation | Income Tax | Sdn Bhd Setup | Johor Bahru | Malaysia</title>
+    <link href="~/ForIcon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <!--Added Yap-->
+        <div style="width: 100%; background: none repeat scroll 0% 0% rgba(30,105,222, 0.86); height: 34px; line-height: 1; ">
+            <div style="margin: 0px auto; height: 34px; text-align: left; position: relative;width:980px">
+                <div style="display: inline-block; vertical-align: top;">
+                    <a href="@Url.Action("Index")" style='background: url("/images/WBS_logo1.jpg") no-repeat scroll 0px 0px transparent;width:73px;height:32px;display:block;padding-bottom:3px;'>
+                    </a>
+                </div>
+                <div style="vertical-align: top; position: absolute; top: 0px; right: 0px;">
+                    <div style="padding-top: 10px; vertical-align: top; display: inline-block;">
+                        <span style="font-size: 0px; margin-left: 15px; display: inline-block; vertical-align: top; margin-top: -10px;">
+                            <a href="@Url.Action("Index","Home")" style="color: #FFFFFF; text-decoration: none; display: inline-block; height: 24px; padding: 8px 7px 0px; vertical-align: top; font-size: 15px;">Home</a>
+                            <a href="@Url.Action("About","Home")" style="color: #FFFFFF; text-decoration: none; display: inline-block; height: 24px; padding: 8px 7px 0px; vertical-align: top; font-size: 15px">About</a>
+                            <a href="@Url.Action("Services","Home")" style="color: #FFFFFF; text-decoration: none; display: inline-block; height: 24px; padding: 8px 7px 0px; vertical-align: top; font-size: 15px">Services</a>
+                            <a href="@Url.Action("Events","Home")" style="color: #FFFFFF; text-decoration: none; display: inline-block; height: 24px; padding: 8px 7px 0px; vertical-align: top; font-size: 15px">Events</a>
+                            <a href="@Url.Action("Contact","Home")" style="color: #FFFFFF; text-decoration: none; display: inline-block; height: 24px; padding: 8px 7px 0px; vertical-align: top; font-size: 15px;">Contact</a>
+                            <a href="" class="langSelected" style="margin-left:20px;color: #FFFFFF; text-decoration: none; display: inline-block; height: 24px; padding: 8px 7px 0px; vertical-align: top; font-size: 15px;">ENG</a>
+                            <a href="" style="color: #FFFFFF; text-decoration: none; display: inline-block; height: 24px; padding: 8px 7px 0px; vertical-align: top; font-size: 15px;">中文</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Yap-->
+        @*<div class="content-wrapper">
+            <div><h1>Helping Your Bussiness Work Out Best</h1></div>
+            <div class="service-box">
+                <a>
+                    <img src="/images/bas3.png" alt="Bookkeeping & Accountings Service" />
+                    <h2>Bookkeeping &amp; Accounting Services</h2>
+                    <div>
+                        <p>We provide statutory services with high quality</p>
+                        <span>More >></span>
+                    </div>
+                </a>
+            </div>
+            <div class="service-box ">
+                <a>
+                    <img src="/images/mgnt.png" alt="Management Service" />
+                    <h2>Management <br /> Services</h2>
+                    <div>
+                        <p>We provide management services with high quality</p>
+                        <span>More >></span>
+                    </div>
+                </a>
+            </div>
+            <div class="service-box ">
+                <a>
+                    <img src="/images/tax.png" alt="Tax Consultancy" />
+                    <h2>Tax &amp; Compliance <br /> Consultancy</h2>
+                    <div>
+                        <p>We provide tax consultancy with high quality</p>
+                        <span>More >></span>
+                    </div>
+                </a>
+            </div>
+            <div class="service-box ">
+                <a>
+                    <img src="/images/vas.png" alt="Value Added Services" />
+                    <h2>Value Added <br /> Services</h2>
+                    <div>
+                        <p>We provide value added services with high quality</p>
+                        <span>More >></span>
+                    </div>
+                </a>
+            </div>
+        </div>*@
+    </header>
+    @RenderBody()
+    @*<div id="body">
+            @RenderSection("featured", required: false)
+            @RenderBody()
+        </div>*@
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - WBS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+     @Scripts.Render("~/bundles/bxSlider")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        //$('.banner').unslider({
+        //    fluid: true,
+        //    dots: true,
+        //    speed: 1000, delay: 3000
+        //});
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({ auto: true, captions: true });
+        });
+    </script>
+</body>
+</html>
